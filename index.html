@@ -10,8 +10,8 @@
         data.addColumn('date', 'Date');
         data.addColumn('number', 'Buyers');
         data.addColumn('number', 'DedupedBuyers');
-        data.addColumn('string', 'Revenue');
-        data.addColumn('string', 'AOV');        
+        data.addColumn('number', 'Revenue');
+        data.addColumn('number', 'AOV');        
         data.addRows([
           ['AMHobbies',new Date (2011,6,1),12817,12782,4997895.43,264.690998],
 ['AMHobbies',new Date (2014,4,1),18036,18000,6200961.39,221.732152],
@@ -94,13 +94,12 @@
 ['LP',new Date (2013,8,1),105852,101050,12644832.44,90.117467],
 ['LP',new Date (2012,1,1),24564,23748,3130990.22,98.251803],
 ['LP',new Date (2013,5,1),43652,41774,8491380.41,141.195902],
-['LP',new Date (2012,4,1),30086,29111,5544758.56,139.329544],
-['LP',new Date (2013,11,1),32181,31312,4665636.36,112.311308]
+['LP',new Date (2012,4,1),30086,29111,5544758.56,139.329544]
         ]);
 
         var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
 
-        chart.draw(data, {width: 600, height:300});
+        chart.draw(data, {width: 1200, height:600});
       }
     </script>
   </head>
